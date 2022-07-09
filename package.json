@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "concurrently \"python app.py\" \"npm run serve --fix\" \"npm run format\"",
+    "start": "concurrently \"python app.py\" \"npm run build --fix\" \"npm run format\"",
     "format": "prettier --write"
   },
   "dependencies": {
@@ -46,7 +46,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "linebreak-style": 0 
+    }
   },
   "browserslist": [
     "> 1%",
