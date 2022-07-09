@@ -13,7 +13,7 @@ Navigate to http://localhost:8080/ to see the result
 
 ## How to use the web app
 Enter a keyword to search for volunteer job corresponding to that keyword
-![image](https://user-images.githubusercontent.com/59235304/178111117-0e781b33-a4b2-4897-b4a4-2084a770444e.png)
+![image](https://user-images.githubusercontent.com/59235304/178111485-4e820a4e-4ab5-4bbc-8ec1-46c660c9e05f.png)
 
 Click Visit to navigate to the volunteer post website
 ![image](https://user-images.githubusercontent.com/59235304/178111319-b33ad164-d8b7-497f-8d5e-4d5e6d8298a7.png)
