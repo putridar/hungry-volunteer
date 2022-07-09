@@ -36,7 +36,7 @@ def get_title(links):
     for url in links:
         try:
             page = urllib.request.urlopen(url)
-            soup = BeautifulSoup(page)
+            soup = BeautifulSoup(page, features="lxml")
             result[url] = soup.title.string
         except:
             continue
