@@ -5,8 +5,6 @@
 2. Type ```cd hungry-volunteer```
 3. Run ```pip install -r requirements.txt``` to install dependencies
 4. Run ```npm install```
-5. Run ```npm start --fix```
-
-If error persist, stop the program (Ctrl + C) and run ```npm start --fix``` again
+5. Run ```npm start```
 
 Navigate to http://localhost:8080/ to see the result
