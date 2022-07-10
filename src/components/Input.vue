@@ -9,7 +9,7 @@
     <p class = "title2"> Start your volunteer career with a single click </p>
     <div class = "content">
         <p class = "label"> Enter a keyword </p>
-        <input type="text" placeholder="Name" v-model="name" class ="inputstyle" required><br>
+        <input type="text" placeholder="Keyword" v-model="name" class ="inputstyle" required><br>
         <button class = "submit" v-on:click="navigate()">Submit</button>
     </div>
   </div>

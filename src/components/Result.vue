@@ -126,7 +126,7 @@ export default {
       font-size: 22px;
       line-height: 4vh;
       text-align: center;
-      width: 15vw;
+      width: 17vw;
       height: 10vh;
       margin: 5vh;
       margin-left: 5vh;
