@@ -5,17 +5,16 @@ from requests_html import HTML
 from requests_html import HTMLSession
 from bs4 import BeautifulSoup
 
-def get_source(url):
-    try:
-        session = HTMLSession()
-        response = session.get(url)
+def get_url(url):
+    try: 
+        response = HTMLSession().get(url)
         return response
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
         print(e)
 
 def scrape(q):
     q = urllib.parse.quote_plus(q)
-    result = get_source("https://www.google.com/search?q=" + q)
+    result = get_url("https://www.google.com/search?q=" + q)
     lst = list(result.html.absolute_links)
     exclude_domains = ('google.', 'https://google.', 'https://webcache.googleusercontent.', 'http://webcache.googleusercontent.', 'https://policies.google.',
                        'https://support.google.','https://maps.google.','https://www.instagram.','https://www.youtube.', 'facebook', 'tripadvisor')

@@ -2,7 +2,7 @@
   <div class="bg">
     <div class="title">
       <button class = "submit2" v-on:click="back()">Try other keyword</button>
-      <button class = "submit2" v-on:click="getMessage()">Refresh</button>
+      <button class = "submit2" v-on:click="refresh()">Refresh</button>
       <p class="name">{{this.name}}</p><br><br>
     </div>
     <div v-if="this.result == 'Loading...'">{{this.result}}</div>
@@ -35,12 +35,16 @@ export default {
     };
   },
   methods: {
-    getMessage() {
+    getLinks() {
       const path = 'http://localhost:5000/scrape';
       axios.post(path, { name: this.name })
         .then((res) => {
           this.result = res.data;
         });
+    },
+    refresh() {
+      this.result = 'Loading...';
+      this.getLinks();
     },
     back() {
       this.$router.push({
@@ -52,7 +56,7 @@ export default {
     },
   },
   mounted() {
-    this.getMessage();
+    this.getLinks();
   },
 };
 </script>
